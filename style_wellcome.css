@@ -1,0 +1,47 @@
+body{margin: 0; padding: 0;}
+*{font-style: normal; font-weight: normal; box-sizing: border-box;}
+
+@font-face{ src: url('web_font/FredokaOne-Regular.ttf'); font-family: fredoka;}
+@font-face{src: url('web_font/WorkSans-VariableFont_wght.ttf'); font-family: worksans;}
+
+
+/* ---Style-page-well-come */
+.page-well-come{
+    background: #FFFFFF;
+    width: 100%;
+    z-index: 10;
+    top: 0%;
+    left: 0;
+   
+}
+
+.avatar{ position: absolute; top: 13.5%; width: 100%; padding-top: -14%; text-align: center;}
+
+.add-avatar{  position: absolute;  top: 62%;  left: 53%;}
+
+h5{
+    margin: 0;
+    padding-top: 3%;
+    text-align: center;
+    font-family: worksans;
+    font-weight: 500;
+    font-size: 18px;
+    color: #797979;
+}
+
+.background-middle{  padding-left: 4%;  position: absolute;  width: 100%;  top: 16%; }
+
+.background-buttom{   padding-top: 64%;   text-align: right;}
+
+.text-well-come{
+    position: absolute;
+    top: 58%;
+    left: 45%;
+    font-family: fredoka;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.next-page{  padding: 8% 0% 0% 53%;}

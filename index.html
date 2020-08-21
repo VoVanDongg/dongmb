@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_index.css">
+</head>
+<body>
+    <article class="page-get-start" style="background: #3E8BF8; position: relative; overflow-y: hidden;">
+        <input type="checkbox" hidden name="chexbox" id="check-get-start">
+        <h1 class="tittle-page-get-start">UEF</h1>
+        <div class="img-background">
+            <img src="img/img_background.png" style="width: 92%;" alt="photo">
+        </div>
+        
+        <h4 class="name-app">LEARING SOCIAL NETWORK</h4>
+
+        <div class="button-get-start">
+            <label for="check-get-start"> <p>Get Started</p> </label>
+        </div>   
+     <!-- End_page-get-started -->
+
+        <section class="page-sign-in">
+            <form class="form-sign-in" action=" " method="POST" >
+                <div class="accout-sign-in">
+                    <input type="text" name="name" placeholder=" User Name">
+                </div>
+
+                <div class="accout-sign-in" style="position: relative;">
+                    <input id="password" type="password" name="pass" placeholder=" Password">
+                    <img class="pass-word-eye" src="img/icon-eye-password.png" alt="photo" onclick="showHidden()">
+                    <div class="forget-password">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>        
+            
+                <div class="login width google">
+                    <a href="#"> <span>Login with Google</span> <img src="img/icon_google.svg" alt="photo" style="vertical-align: middle; padding-left: 5%;"></a>
+                </div>
+
+                <div class="login width microsoft">
+                    <a href="#" style="padding: 3% 0;"> <span>Login with Microsoft</span> <img src="img/icon_microsoft.svg" alt="photo" style="vertical-align: middle; padding-left: 4%;"> </a>
+                </div>
+                 <button type="submit" class="login-button" id="login-btn">LOGIN</button>
+            </form>
+        </section>
+        <!-- show_hiden_password -->
+        <script type="text/javascript"> 
+            isBool = true;
+            function showHidden(){
+                if(isBool){
+                    document.getElementById("password").setAttribute("type" , "text");
+                    isBool = false;
+                }
+                else{
+                    document.getElementById("password").setAttribute("type", "password");
+                    isBool = true;
+                }
+            }
+        </script>
+     <!----End_page-sign-in---->
+    </article> 
+</body>
+</html>

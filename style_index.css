@@ -1,0 +1,115 @@
+body{  padding: 0;  margin: 0; }
+
+@font-face{ src: url('web_font/FredokaOne-Regular.ttf'); font-family: fredoka;}
+@font-face{src: url('web_font/WorkSans-VariableFont_wght.ttf'); font-family: worksans;}
+
+a{text-decoration: none;}
+*{font-style: normal; font-weight: normal; box-sizing: border-box;}
+
+/* ----  Style-page-get-start  ---- */
+.page-get-start .tittle-page-get-start{
+    text-align: center;
+    margin: 0; 
+    font-family: fredoka;
+    font-size: 80px;
+    padding-top: 15%;
+    color: #FFFFFF;
+}
+.page-get-start .img-background{  padding-top: 12%;  padding-left: 3.2%; position: absolute; width: 100%; }
+.page-get-start .name-app{
+    font-family: fredoka;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 123% 0 13% 0;
+    margin: 0;
+}
+
+.page-get-start .button-get-start{padding-bottom: 7.5%;  text-align: center;  width: 85%; margin: 0 auto;}
+.page-get-start .button-get-start p{
+    padding: 2.5%;
+    background: #FFFFFF;
+    font-family: fredoka;
+    border-radius: 19px; 
+    font-weight: bold;
+    font-size: 24px;
+    color: #3E8BF8;
+}
+/* ---  End_Style_page-get-started  --- */
+
+/* ---  Style_page-sign-in  --- */
+.page-sign-in{
+    position: absolute;
+    top: 30.5%;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.12);
+    border-radius: 45px 45px 0px 0px;
+    transform: translateY(110%);
+    opacity: 0;
+    transition: all linear 0.4s  ; 
+    
+}
+.form-sign-in{   width: 85%; margin: 0 auto;  padding-top: 20.5%;}
+.page-sign-in .form-sign-in .accout-sign-in  input{
+    border: none;
+    width: 100%;
+    padding: 5%;
+    background: rgba(163, 186, 217, 0.2);
+    border-radius: 7px;
+    font-family: worksans;
+    font-size: 18px;
+    margin-bottom: 15%;
+}
+.page-sign-in .form-sign-in .accout-sign-in .pass-word-eye{ position: absolute;   left: 87.13%;  top: 18%; }
+.page-sign-in .form-sign-in .forget-password{  position: absolute;  top: 54%;  text-align: right;  width: 100%; }
+.page-sign-in .form-sign-in .forget-password a{ font-size: 15px;  color: #797979;}
+
+.page-sign-in .form-sign-in .login a{
+    text-align: center;
+    width: 100%;
+    background: rgba(163, 186, 217, 0.2);
+    padding: 4% 0;
+    display: inline-block;
+    font-family: worksans;
+    font-size: 18px;
+    color: #797979;
+    margin-bottom: 15%;
+    border-radius: 7px;
+}
+.page-sign-in .form-sign-in .login a:hover{  outline: none; }
+
+.page-sign-in .form-sign-in .login-button{
+    width: 100%;
+    padding: 4%;
+    border: none;
+    background: #3E8BF8;
+    border-radius: 19px;
+    margin-bottom: 20%;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: worksans;
+}
+.page-sign-in .form-sign-in .login-button:hover{  outline: none; }
+/* ----  End-style-page-sign-in  ---- */
+
+/* ---  Style-next-page-get-start  ---- */
+#check-get-start:checked ~ .page-sign-in{ opacity: 1; transform: translateY(0%); z-index: 1; }
+#check-get-start:checked ~ .tittle-page-get-start{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    transition: all  1s ease-out ;
+}
+#check-get-start:checked ~ .name-app{padding: 164% 0 13% 0;}
+#check-get-start:checked ~ .img-background{
+    transform: translateY(-57%);
+    position: absolute;
+    width: 90%;
+    padding: 119% 0% 0% 14%;
+    z-index: 2;
+    transition: transform linear 0.45s ;
+}
+/* ---  End-Style-next-page-get-start  ---- */

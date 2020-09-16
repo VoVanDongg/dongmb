@@ -1,0 +1,133 @@
+*{margin: 0; padding: 0; list-style: none; box-sizing: border-box; -webkit-tap-highlight-color: transparent; font-style: normal;  font-weight: normal;  }
+
+::-webkit-scrollbar {display: none;}  /* hidden scrollbar*/
+
+@font-face{ src: url('web_font/FredokaOne-Regular.ttf'); font-family: fredoka;}
+@font-face{src: url('web_font/WorkSans-VariableFont_wght.ttf'); font-family: workSans;}
+@font-face{src: url('web_font/WorkSans-SemiBold.ttf'); font-family: workSansBold;}
+
+a{text-decoration: none;}
+
+/*--- style_header ---*/
+header{padding: 8% 8% 12% 8%;}
+header .tittle-header{  display: flex;  justify-content: space-between;  padding-bottom: 12%; }
+header .tittle-header .name-page{   font-family: fredoka;  font-size: 30px;  color: #3E8BF8; }
+header .tittle-header .info-user{
+    font-family: workSansBold;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+}
+header .tittle-header .info-user .avatar{
+    width: 48px;
+    height: 48px;
+    background: rgba(216, 216, 216, 0.55);
+    border-radius: 70%;
+}
+header .search-header{  width: 100%;  margin: 0 auto;  border-radius: 49px;  position: relative; display: flex; justify-content: center; }
+header .search-header .icon-search{  position: absolute;  left: 53%;  top: 30%;  width: 6%; transition: all 0.4s ease-in-out;}
+header .search-header #search{
+    outline: none;
+    border: none;
+    width: 90%;
+    background: rgba(196, 196, 196, 0.15);
+    border-radius: 49px;
+    padding: 4.5% 18% 4.5% 4.5%;
+    text-align: center;
+    font-size: 14px;
+    font-family: workSans;
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+header .search-header .submit-search{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    border-radius: 0px 49px 49px 0px;
+    border: none;
+    background: #3E8BF8;
+    color: white;
+    width: 0px;
+    transition: all 0.4s ease-in-out;
+    transition: all 0.4s cubic-bezier(0, 0, 0.43, 1.49);
+    font-family: workSansBold;
+    font-size: 20px;
+}
+header .search-header #search:not(:placeholder-shown) ~ .submit-search{ width: 55px;}
+header .search-header #search:focus{width: 100%; text-align: start;}
+header .search-header #search:not(:placeholder-shown) + .icon-search{opacity: 0;}
+header .search-header #search:focus + .icon-search{left: 85%;}
+
+/*--- style-content ---*/
+.container{ display: flex;  overflow: auto hidden;  padding-left: 11%; }
+.container .content{  padding-right: 15%; }
+.container .content .tittle-content{
+    text-align: center;
+    padding: 3% 0 4% 0;
+    font-family: workSansBold;
+    font-weight: 600;
+    font-size: 25px;
+    color: #3E8BF8;
+}
+.container .content .item{
+    border-radius: 37px;
+    width: 268px;
+    height: 327px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .content .item img{width: 88%;}
+
+/*--- style-footer ---*/
+footer{padding-top: 33%;}
+footer .menu-footer{  display: flex;  justify-content: space-between;  width: 85%;  margin: 0 auto; }
+footer .menu-footer .icon-menu{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+footer .menu-footer .icon-menu img{width: 65%;}
+
+footer .menu-footer .icon-menu:hover{background: rgba(186, 210, 242, 0.26);}
+
+/* --- Style-page-setting --- */
+.avatar .img-user{
+    width: 86px;
+    height: 86px;
+    background: rgba(216, 216, 216, 0.55);
+    border-radius: 60%;
+    margin: 0 auto;
+}
+.avatar .icon-add-avatar{  position: absolute; top: 56%; left: 53%; }
+
+.avatar .text-add-avatar{
+    text-align: center;
+    padding-top: 5%;
+    font-family: workSans;
+    font-weight: 500;
+    font-size: 14px;
+    color: #C1C1C1;
+}
+.user-information{ display: flex;  flex-direction: column;  width: 100%;  padding-top: 5%; }
+
+.user-information .content{
+    width: 80%;
+    margin: 0 auto;
+    font-family: workSansBold;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000000;
+    margin-bottom: 10%;
+}
+.user-information .content span{
+    font-family: workSans;
+    font-weight: 500;
+    font-size: 18px;
+    color: #C4C4C4;
+    padding-right: 6%;
+}

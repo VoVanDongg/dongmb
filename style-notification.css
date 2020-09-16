@@ -1,0 +1,55 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    box-sizing: border-box; 
+    -webkit-tap-highlight-color: transparent; 
+    font-style: normal;  
+    font-weight: normal;  
+}
+@font-face{ src: url('web_font/FredokaOne-Regular.ttf'); font-family: fredoka;}
+@font-face{src: url('web_font/WorkSans-VariableFont_wght.ttf'); font-family: workSans;}
+@font-face{src: url('web_font/WorkSans-SemiBold.ttf'); font-family: workSansBold;}
+
+a{text-decoration: none;}
+/* --- style-scroll-bar --- */
+  /* size-scrollbar */
+  ::-webkit-scrollbar { width: 7px; display: block; height: 10px;}
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {  background: #CDDCEE;  border-radius: 15px;}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {  background: #E0EBF9;}
+
+/* --- style-header --- */
+header{padding-bottom: 12%;}
+header .tittle-page{
+    font-family: fredoka;
+    font-size: 30px;
+    color: #3E8BF8;
+    padding-top: 9%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* --- style-content --- */
+article{overflow-y: scroll; height: 700px;}
+
+article .item{
+    width: 85%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 5% 0;
+    margin-bottom: 11%;
+}
+article .item .tittle-deadline{
+    font-family: workSansBold;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+}
+article .item .time-deadline{ font-family: workSans; font-size: 18px; color: rgba(151, 151, 151, 0.6); padding: 2.5% 0 0 8%;}
